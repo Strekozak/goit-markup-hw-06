@@ -576,10 +576,10 @@ color: var(--color-white);
     background-color: transparent;
     color: var(--color-white);
 }
-.footer-input:placeholder-shown 
 
-.footer-input:focus .footer-label {
-    transform: translateY(100%);
+.footer-input:focus + .footer-label {
+    transform: translateX(-150%);
+   
 }
 
 .footer-btn {
@@ -672,6 +672,84 @@ color: var(--color-white);
 .modal-btn:active .modal-icon {
     fill: var(--color-white);
 }
+.modal-title {
+    display: block;
+    margin-top: 72px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-light-slate);
 
+}
+.modal-form-field {
+    position: relative;
+    margin-bottom: 8px;
+}
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding: 11px 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: transparent;
+}
+.modal-form-input:focus {
+    border: 1px solid var(--color-iris);    
+}
+ .modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: var(--color-navy-blue);
+    pointer-events: none;
 
+ }
+.modal-form-input:focus + .modal-form-icon {
+    fill: var(--color-iris);
+}
+.modal-form-area {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: transparent;
+}
+.modal-form-area:focus {
+    border: 1px solid var(--color-iris);
+}
+.modal-form-area::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-agree {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
 
+.modal-check-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;        
+    letter-spacing: 0.04em;
+
+}
