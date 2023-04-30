@@ -752,31 +752,32 @@ color: var(--color-white);
     margin-bottom: 24px;
     justify-content: left;
     align-items: center;
+    cursor: pointer;
 }
 .modal-check-box {
 position: relative;
+display: flex;
 }
 .modal-form-check {
-    appearance: none; 
-    width: 16px;
-    height: 16px;
-    
-}
-.modal-check-icon {    
-    position: absolute;
+    appearance: none;     
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    fill: transparent;
-    
+    border-radius: 2px;         
 }
-.modal-form-check:checked + .modal-check-icon {
+.modal-check-icon {    
+    position: absolute;    
+    top: 50%;
+    left: 50%;  
+    transform: translateY(-50%) translateX(-50%);
+    fill: transparent;    
+}
+
+.modal-form-check:checked{
     background-color: var(--color-ocean);
-    border-color: var(--color-ocean);    
+        border-color: var(--color-ocean);
+}
+.modal-form-check:checked + .modal-check-icon {        
     fill: var(--color-cloud);
 }
 .modal-check-text {    
