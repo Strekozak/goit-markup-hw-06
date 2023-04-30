@@ -753,6 +753,12 @@ color: var(--color-white);
     justify-content: left;
     align-items: center;
     cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .modal-form-check {
@@ -778,11 +784,7 @@ color: var(--color-white);
 .modal-form-check:checked + .modal-check-icon {     
     opacity: 1;
 }
-.modal-check-text {    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;        
-    letter-spacing: 0.04em;
+.agree-link {
+    margin-left: 4px;
+    color: var(--color-iris);
 }
