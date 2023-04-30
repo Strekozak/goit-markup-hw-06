@@ -748,7 +748,7 @@ color: var(--color-white);
 }
 .modal-form-agree {
     display: flex;
-    gap: 8px;
+    /* gap: 8px; */
     margin-bottom: 24px;
     justify-content: left;
     align-items: center;
@@ -757,9 +757,12 @@ color: var(--color-white);
 .modal-check-box {
 position: relative;
 display: flex;
+justify-content: left;
+align-items: center;
 }
 .modal-form-check {
-    appearance: none;     
+    appearance: none;   
+    margin-right: 8px;  
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -767,9 +770,8 @@ display: flex;
 }
 .modal-check-icon {    
     position: absolute;    
-    top: 50%;
-    left: 50%;  
-    transform: translateY(-50%) translateX(-50%);
+    top: 4px;
+    left: 3px;      
     fill: transparent;    
 }
 
